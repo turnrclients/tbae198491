@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Premium salon and spa services offering haircuts, styling, skincare, massages, and beauty treatments to rejuvenate and refresh.">
+	<meta name="keywords" content="salon, spa, hair care, beauty treatments, skincare">
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/middle_sections.css">
+	<link rel="stylesheet" href="assets/css/anim-effects.css">
+	<link rel="stylesheet" href="assets/css/components/header-27.css">
+	<link rel="stylesheet" href="assets/css/components/footer-11.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/custom-Imports.css">
+	<link rel="stylesheet" href="assets/css/resonsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<style>
+		:root {
+			--site-font: "poppins", sans-serif;
+		}
+
+		body,
+		#wrapper,
+		#wrapper * {
+			font-family: var(--site-font) !important;
+		}
+	</style>
+</head>
+
+<body class="theme-1">
+	<div id="wrapper">
+		<div id="header"></div>
+		<div id="mainPageContent">
+
+			<section class="section-wrapper contact-20 ">
+				<div class="container">
+					<div class="row">
+						<!-- Left Form -->
+						<div class="col-md-6">
+							<div class="contact-box anim-slide-up">
+								<p>Contact Us</p>
+								<h2>Get In Touch</h2>
+								<form method="POST" id="contact-form">
+									<div class="form-group">
+										<label>Name</label>
+										<input type="text" class="form-control" placeholder="Name" name="name" required>
+									</div>
+									<div class="form-group">
+										<label>Email</label>
+										<input type="email" class="form-control" placeholder="Email" name="email"
+											required>
+									</div>
+									<div class="form-group">
+										<label>Message</label>
+										<textarea class="form-control" placeholder="Message" name="message" rows="5"
+											required></textarea>
+									</div>
+									<button type="submit" class="btn" onclick="sendEmailDataToGitHub()">Send
+										Now</button>
+									<!-- Form Message -->
+									<div class="col-12">
+										<div class="form-group">
+											<p class="form-message"></p>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<!-- Right Contact Info -->
+						<div class="col-md-6 anim-slide-up">
+							<p style="color: #bbb; line-height: 1.8;">
+								We’d love to hear from you! Whether you’d like to book an appointment, ask about our spa
+								packages,
+								or learn more about our salon services, our team is here to help. Visit us, call, or
+								send us a
+								message — your relaxation starts here.
+							</p>
+
+							<div class="row" style="margin-top: 30px;">
+								<div class="col-xs-6 info-box">
+									<i class="bi bi-telephone"></i>
+									<div>
+										<h4>Phone Number</h4>
+										<p>+6282 4032 567</p>
+									</div>
+								</div>
+								<div class="col-xs-6 info-box">
+									<i class="bi bi-envelope"></i>
+									<div>
+										<h4>Email Address</h4>
+										<p>Example@Email.Com</p>
+									</div>
+								</div>
+								<div class="col-xs-6 info-box">
+									<i class="bi bi-whatsapp"></i>
+									<div>
+										<h4>Whatsapp</h4>
+										<p>082-245-7253</p>
+									</div>
+								</div>
+								<div class="col-xs-6 info-box">
+									<i class="bi bi-geo-alt"></i>
+									<div>
+										<h4>Our Office</h4>
+										<p>2443 Oak Ridge Omaha, QA 45065</p>
+									</div>
+								</div>
+							</div>
+
+							<div style="margin-top: 25px;">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.570095258327!2d-0.123!3d51.5033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900f1b5cf%3A0x1a6358d1a78e52e3!2sLondon%20Eye!5e0!3m2!1sen!2sus!4v1698584000000!5m2!1sen!2sus"
+									allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="footer"></div>
+	</div>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/jquery.main.js"></script>
+	<script src="assets/js/gsap.min.js"></script>
+	<script src="assets/js/ScrollTrigger.min.js"></script>
+	<script src="assets/js/Observer.min.js"></script>
+	<script src="assets/js/gsap.effects.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="assets/js/common_js/send_email.js"></script>
+	<script src="assets/js/common_js/html_image_editor.js"></script>
+	<script src="assets/js/common_js/windows_postmessage.js"></script>
+	<script>
+		var fileName = document.title || "index";
+
+		$(document).ready(function () {
+			loadHeaderFooter("header", "client-assets/tbae198491/tbae198491/header.html");
+			loadHeaderFooter("footer", "client-assets/tbae198491/tbae198491/footer.html");
+
+			loadHeaderFooter("header", "header.html");
+			loadHeaderFooter("footer", "footer.html");
+		});
+
+		function loadHeaderFooter(id, file) {
+			$("#" + id).load(file, function (response, status, xhr) {
+				if (status === "error") {
+					console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+					return;
+				}
+
+				$("#" + id).find("a").addClass("edit-site");
+
+				if (id === "header") {
+					if (fileName.toLowerCase() === "index" || fileName.toLowerCase() === "home") {
+						$("#" + id).find(".main-header-section").css("display", "block");
+					} else {
+						$("#" + id).find(".main-header-section").css("display", "none");
+						$("#" + id).find(".header-breadcrumb-section").css("display", "block");
+						$("#" + id).find(".header-breadcrumb-section .Page_name")
+							.text(fileName.charAt(0).toUpperCase() + fileName.slice(1));
+					}
+				}
+			});
+		}
+	</script>
+	<script src="assets/js/middle-section.js"></script>
+
+</body>
+
+</html>

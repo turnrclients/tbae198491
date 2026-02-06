@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium salon and spa services offering haircuts, styling, skincare, massages, and beauty treatments to rejuvenate and refresh.">
+    <meta name="keywords" content="salon, spa, hair care, beauty treatments, skincare">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/middle_sections.css">
+    <link rel="stylesheet" href="assets/css/anim-effects.css">
+    <link rel="stylesheet" href="assets/css/components/header-27.css">
+    <link rel="stylesheet" href="assets/css/components/footer-11.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/custom-Imports.css">
+    <link rel="stylesheet" href="assets/css/resonsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        :root {
+            --site-font: "poppins", sans-serif;
+        }
+
+        body,
+        #wrapper,
+        #wrapper * {
+            font-family: var(--site-font) !important;
+        }
+    </style>
+</head>
+
+<body class="theme-1">
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="mainPageContent">
+
+            <section class="section-wrapper about-50">
+                <div class="container-fluid about-50-section-wrapper">
+
+                    <!-- Row 1 -->
+                    <div class="row about-50-row anim-slide-up">
+                        <div class="col-sm-6">
+                            <img src="assets/images/about-50-1.jpg" alt="Hair stylist"
+                                class="about-50-img">
+                        </div>
+                        <div class="col-sm-6 about-50-content">
+                            <h3 class="about-50-title">Professional Staff</h3>
+                            <p class="about-50-text">
+                                At <strong>Modis Hair Studio</strong>, our stylists aren’t just professionals — they’re
+                                artists with
+                                a passion for transforming hair.
+                                Every member of our team is highly trained in the latest hair trends, precision cutting,
+                                coloring,
+                                and styling techniques. Whether you’re looking for a bold new look, a subtle trim, or
+                                expert hair
+                                treatment,
+                                our staff ensures your experience is relaxing and personalized.
+                            </p>
+                            <p class="about-50-text">
+                                Our salon experts regularly attend workshops and international beauty events to stay
+                                ahead of
+                                fashion trends.
+                                From balayage highlights to hair spa therapies, we deliver results that enhance your
+                                personality and
+                                confidence.
+                                We take pride in using only premium, salon-grade products that protect and nourish your
+                                hair,
+                                leaving it soft,
+                                shiny, and full of life.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="row about-50-row anim-slide-up">
+                        <div class="col-sm-6 about-50-content">
+                            <h3 class="about-50-title">Cozy &amp; Elegant Interior</h3>
+                            <p class="about-50-text">
+                                Step into an ambiance of calm sophistication — our salon is designed to make you feel at
+                                ease from
+                                the moment
+                                you walk in. Soft lighting, elegant décor, and a warm welcome set the perfect tone for
+                                your
+                                self-care session.
+                                Each styling station is equipped with modern tools and comfortable seating, allowing you
+                                to enjoy
+                                your time
+                                while our stylists work their magic.
+                            </p>
+                            <p class="about-50-text">
+                                Our cozy interior combines luxury and comfort — perfect for a relaxing haircut,
+                                rejuvenating head
+                                massage, or
+                                creative hair makeover. We ensure cleanliness, hygiene, and a soothing atmosphere so you
+                                can truly
+                                unwind.
+                                Come for a haircut, stay for the experience — where every visit feels like a retreat for
+                                your hair
+                                and soul.
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/images/about-50-2.jpg" alt="Salon Interior"
+                                class="about-50-img">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/Observer.min.js"></script>
+    <script src="assets/js/gsap.effects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/common_js/send_email.js"></script>
+    <script src="assets/js/common_js/html_image_editor.js"></script>
+    <script src="assets/js/common_js/windows_postmessage.js"></script>
+    <script>
+        var fileName = document.title || "index";
+
+        $(document).ready(function () {
+     	   loadHeaderFooter("header", "client-assets/tbae198491/tbae198491/header.html");
+       	   loadHeaderFooter("footer", "client-assets/tbae198491/tbae198491/footer.html");
+
+	       loadHeaderFooter("header", "header.html");
+           loadHeaderFooter("footer", "footer.html");
+        });
+
+        function loadHeaderFooter(id, file) {
+            $("#" + id).load(file, function (response, status, xhr) {
+                if (status === "error") {
+                    console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+                    return;
+                }
+
+                $("#" + id).find("a").addClass("edit-site");
+
+                if (id === "header") {
+                    if (fileName.toLowerCase() === "index" || fileName.toLowerCase() === "home") {
+                        $("#" + id).find(".main-header-section").css("display", "block");
+                    } else {
+                        $("#" + id).find(".main-header-section").css("display", "none");
+                        $("#" + id).find(".header-breadcrumb-section").css("display", "block");
+                        $("#" + id).find(".header-breadcrumb-section .Page_name")
+                            .text(fileName.charAt(0).toUpperCase() + fileName.slice(1));
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="assets/js/middle-section.js"></script>
+
+</body>
+
+</html>
