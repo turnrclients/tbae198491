@@ -733,7 +733,7 @@ $(document).on('hidden.bs.modal', '#imagePickerModal', function () {
                     $('.aiBotImage').each(function() {
                     $(this).addClass('jumping');
                 });
-                enableSocialLinkEditing();  // for socail media links
+                enableSocialLinkEditing();
 
         } else {
             wrapper.find('*').removeClass('editable');
@@ -1338,8 +1338,7 @@ function initializeInputEditor(anchor) {
         editedHTML.find('.selectedPageName').remove();
         editedHTML.find('#page-header').removeClass('sticky-active');
         editedHTML.find('#wrapper').removeClass('editableSection');
-        editedHTML.find('script[data-editor="true"]').remove();
-        editedHTML.find('link[href*="/assets/css/custom/editmode.css"]').remove();
+
         // SCRIPTS WHICH HAVE BEEN ADDED FROM THE BACKEND HAS TO BE REMOVE BEFORE SAVE
         // editedHTML.find('script[src*="editmode"]').remove();
         // editedHTML.find('script[src*="editModeScript"]').remove();
@@ -1455,7 +1454,7 @@ function updateGoogleMapFromAddress() {
 }
 
 
-// Platform domain rules (for Social media) //New code
+// Platform domain rules   //New code
 const SOCIAL_DOMAIN_RULES = {
     facebook: ['facebook.com', 'fb.com'],
     instagram: ['instagram.com'],
@@ -1465,7 +1464,7 @@ const SOCIAL_DOMAIN_RULES = {
     whatsapp: ['wa.me', 'whatsapp.com']
 };
 
-// Enable social link editing in edit mode(for Social media)
+// Enable social link editing in edit mode
 function enableSocialLinkEditing() {
 
     // Prevent duplicate bindings
