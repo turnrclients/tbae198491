@@ -1015,6 +1015,7 @@
         </div>
         <div id="footer"></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/init.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -1031,14 +1032,13 @@
         var fileName = document.title || "index";
 
         $(document).ready(function () {
-        $(document).ready(function () {
-     	   loadHeaderFooter("header", "client-assets/tbae198491/tbae198491/header.html");
-       	   loadHeaderFooter("footer", "client-assets/tbae198491/tbae198491/footer.html");
+     	  // loadHeaderFooter("header", "client-assets/tbae198491/tbae198491/header.html");
+       	  // loadHeaderFooter("footer", "client-assets/tbae198491/tbae198491/footer.html");
 
 	       loadHeaderFooter("header", "header.html");
            loadHeaderFooter("footer", "footer.html");
         });
-        });
+
 
         function loadHeaderFooter(id, file) {
             $("#" + id).load(file, function (response, status, xhr) {
